@@ -8,7 +8,7 @@ const Home = () => {
     const [data, setData] = useState([]);
     const gettingCoctails = async() => {
         try {
-            const response = await fetch(`${API + inputValue}`);
+            const response = await fetch(API + inputValue);
             const responseData = await response.json();
             console.log(responseData.drinks);
             setData(responseData.drinks);
