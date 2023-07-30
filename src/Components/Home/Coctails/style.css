@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.Coctails {
+    padding: 0;
+    text-align: left;
+    margin: 25px;
+    box-shadow: 1px 0px 10px 0px rgba(0,0,0,0.75);
+}
+.Coctails button {
+    border: none;
+    padding: 2px;
+    background-color: rgb(63, 241, 63);
+    color: white;
+    margin: 10px;
+    border-radius: 5px;
+}
+.Coctails img{
+    height: 15rem;
+    width: auto;
+    margin-bottom: 10px;
+}
+.CoctailsDiv h4,h5,p {
+    margin: 10px;
+}
