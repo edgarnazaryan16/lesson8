@@ -1,0 +1,12 @@
+.Detail {
+    display: flex;
+    margin: 0 auto;
+    width: 1000px;
+}
+.Detail img {
+    width: 300px;
+    height: auto;
+}
+.Detail .description {
+    text-align: left;
+}
