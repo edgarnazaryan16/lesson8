@@ -16,8 +16,9 @@ const Detail = () => {
         }
     }
     useEffect(() => {gettingDetails()}, [])
-    return (detail === {}) ? <CoctailsDetail 
+    return <CoctailsDetail 
         {...detail}
-    /> : <h1>Not Found</h1>
+    />
+    // : <h1>Not Found</h1>
 }
 export default Detail;
