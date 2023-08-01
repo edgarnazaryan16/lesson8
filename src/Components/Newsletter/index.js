@@ -3,9 +3,9 @@ import "./style.css"
 const { useState } = require("react")
 
 const NewsLetter = () => {
-    const [inputName, setInputName] = useState();
-    const [inputLastName, setInputLastName] = useState();
-    const [inputEmail, setInputEmail] = useState();
+    const [inputName, setInputName] = useState('');
+    const [inputLastName, setInputLastName] = useState('');
+    const [inputEmail, setInputEmail] = useState('');
 
     const handleInputNameChange = event => {
         setInputName(event.target.value)

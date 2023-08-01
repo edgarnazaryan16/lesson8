@@ -6,7 +6,7 @@ const Header = () => {
         <div>
             {
                 headerData.map(({title, path}) => (
-                    <Link key={title} className="Link"to={path}>{title}</Link>
+                    <Link key={title} className="Link" to={path}>{title}</Link>
                 ))
             }
         </div>
