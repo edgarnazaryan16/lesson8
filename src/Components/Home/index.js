@@ -2,6 +2,7 @@ import { useEffect, useState } from "react"
 import Coctail from "./Coctails"
 import { API } from "./constants";
 import "./style.css"
+import Header from "../Header";
 
 const Home = () => {
     const [inputValue, setInputValue] = useState("");
@@ -10,9 +11,7 @@ const Home = () => {
         try {
             const response = await fetch(`${API}${inputValue}`);
             const responseData = await response.json();
-            console.log(responseData.drinks);
             setData(responseData.drinks);
-            console.log(data)
         } catch {
             alert("Something goes wrong");
         }
@@ -22,6 +21,7 @@ const Home = () => {
         setInputValue(e.target.value);
     }
     return (<>
+        <Header />
         <input value={inputValue} onChange={handleInputChange}></input>
         <div className="CoctailsDiv">
             {
